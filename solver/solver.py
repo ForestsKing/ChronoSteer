@@ -77,9 +77,9 @@ class Solver:
         context2embed = {}
         context_embed_bank = []
 
-        llm = BGEM3FlagModel(self.args.llm_path)
+        embed_model = BGEM3FlagModel(self.args.embed_path)
         for context in context_bank:
-            context2embed[context] = llm.encode(context)["dense_vecs"].tolist()
+            context2embed[context] = embed_model.encode(context)["dense_vecs"].tolist()
             context_embed_bank.append(context2embed[context])
 
         torch.cuda.empty_cache()

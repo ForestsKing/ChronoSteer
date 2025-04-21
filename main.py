@@ -17,7 +17,7 @@ if __name__ == "__main__":
                         default="./dataset/MTSFBench-300/data/rev-test-reply.json")
 
     parser.add_argument("--tsfm_path", type=str, default="amazon/chronos-bolt-base")
-    parser.add_argument("--llm_path", type=str, default="BAAI/bge-m3")
+    parser.add_argument("--embed_path", type=str, default="BAAI/bge-m3")
     parser.add_argument("--save_path", type=str, default="./log/")
 
     parser.add_argument("--alpha", type=float, default=0.001)
