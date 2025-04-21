@@ -9,7 +9,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser("Multimodal Time Series Foundation Model")
 
     parser.add_argument("--description", type=str, default="ChronoSteer-base")
-    parser.add_argument("--only_test", default=True, action="store_true")
+    parser.add_argument("--only_test", default=False, action="store_true")
 
     parser.add_argument("--train_data", type=str,
                         default="./dataset/ChronoSteer-100K/data/ChronoSteer-100K.json")
