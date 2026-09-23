@@ -1,6 +1,6 @@
 <div align="center">
 
-# ChronoSteer: Bridging Language and Time Series Foundation Models
+# ChronoSteer: Bridging LLMs and TSFMs
 
 <a href="https://arxiv.org/abs/2505.10083"><img src="https://img.shields.io/badge/Paper-arXiv%3A2505.10083-B31B1B.svg" alt="Paper"></a>
 <a href="https://huggingface.co/datasets/ChengsenWang/ChronoSteer-100K"><img src="https://img.shields.io/badge/🤗%20Dataset-ChronoSteer--100K-yellow.svg" alt="ChronoSteer-100K Dataset"></a>
@@ -155,11 +155,10 @@ If you find ChronoSteer useful in your research, please cite our paper:
 
 ```bibtex
 @article{wang2025chronosteer,
-	author = {Chengsen Wang and Qi Qi and Zhongwen Rao and Lujia Pan and Jingyu Wang},
-	title  = {ChronoSteer: Bridging Large Language Model and Time Series Foundation Model via Synthetic Cross-Modal Alignment Dataset},
-  
-  journal  = {ACM Transactions on Knowledge Discovery from Data},
-  year     = {2026},
+    author  = {Chengsen Wang and Qi Qi and Zhongwen Rao and Lujia Pan and Jingyu Wang},
+	title   = {ChronoSteer: Bridging Large Language Model and Time Series Foundation Model via Synthetic Cross-Modal Alignment Dataset},
+    journal = {ACM Transactions on Knowledge Discovery from Data},
+    year    = {2026},
 }
 ```
 
