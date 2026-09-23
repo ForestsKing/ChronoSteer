@@ -154,7 +154,7 @@ ChronoSteer/
 If you find ChronoSteer useful in your research, please cite our paper:
 
 ```bibtex
-@article{wang2025chronosteer,
+@article{chronosteer,
     author  = {Chengsen Wang and Qi Qi and Zhongwen Rao and Lujia Pan and Jingyu Wang},
 	title   = {ChronoSteer: Bridging Large Language Model and Time Series Foundation Model via Synthetic Cross-Modal Alignment Dataset},
     journal = {ACM Transactions on Knowledge Discovery from Data},
