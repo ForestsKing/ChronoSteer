@@ -17,15 +17,13 @@ Conventional forecasting methods are trained end-to-end on unimodal time series,
 
 ## 📊 Results
 
-ChronoSteer is evaluated with mean squared error (MSE) and mean absolute error (MAE) under different historical and forecasting windows. It consistently improves the multimodal forecasts over the corresponding unimodal backbone and surpasses representative TSFM- and LLM-based baselines across energy, traffic, and weather domains.
+ChronoSteer is evaluated on MTSFBench-300 across Energy, Traffic, and Weather. The historical windows vary across 2, 3, 4, and 7 days, while the prediction window is fixed at 1 day. ChronoSteer consistently improves over its unimodal backbone and outperforms representative unimodal and multimodal baselines.
 
-The following results use a fixed 1-day forecasting window and vary the historical window from 2 to 7 days.
+![Prediction errors across different historical windows](./image/result.png)
 
-![Forecasting results with different historical windows](./image/result1.png)
+The following examples illustrate how revision instructions derived from textual context steer the initial forecasts in the three domains. The historical and prediction windows are fixed at 4 days and 1 day, respectively.
 
-The following results use a fixed 7-day historical window and vary the forecasting horizon from 6 hours to 4 days.
-
-![Forecasting results with different forecasting horizons](./image/result2.png)
+![Prediction showcases across Energy, Traffic, and Weather](./image/showcase.png)
 
 ## 🚀 Usage
 
@@ -143,8 +141,8 @@ ChronoSteer/
 │   └── tool.py             # Reproducibility and evaluation utilities
 ├── image/
 │   ├── method.png          # Method overview
-│   ├── result1.png         # Results across historical windows
-│   └── result2.png         # Results across forecasting horizons
+│   ├── result.png          # Main forecasting results
+│   └── showcase.png        # Qualitative prediction showcases
 ├── demo.ipynb              # Interactive steering demonstration
 └── main.py                 # Main training and evaluation entry point
 ```
